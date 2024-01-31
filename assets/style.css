@@ -1,0 +1,55 @@
+/* Reset CSS */
+body {
+    margin: 0;
+}
+
+/* Custom CSS */
+.iconBar {
+    width: 100%;
+    background-color: #f3be97;
+    display: flex;
+    justify-content: space-between;
+}
+.icon {
+    padding: 20px;
+    display: inline-block;
+    color: #742821;
+    background-color: transparent;
+    transition: color 0.4s, background-color 0.4s;
+    font-size: 30px;
+}
+.icon:hover,.icon.active {
+    color: #fff;
+    background-color: #55c2da;
+} 
+.icon i {
+    display: block;
+    text-align: center;
+}
+.button {
+    padding: 8px 20px;
+    background-color: #4b81f4;
+    border-radius: 0 50px 0 50px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.4s;
+}
+.button:hover {
+    background-color: #55c2da;
+}
+.buttonWrapper {
+    margin-top: 20px;
+    text-align: center;
+}
+.directionChange .iconBar {
+    flex-direction: column;
+    width: 100px;
+}
+
+/* Responsive */
+@media(max-width:500px) {
+    .icon {
+        font-size: 20px;
+    }
+}
